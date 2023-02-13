@@ -103,35 +103,35 @@ function Header () {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
-            className='absolute z-10 top-14 p-2 right-0 w-275 gap-4 bg-card shadow-lg rounded-lg backdrop-blur-sm flex flex-col'
+            className='absolute z-10 top-14 p-2 right-0 w-275 gap-4 bg-white shadow-lg rounded-lg backdrop-blur-sm flex flex-col'
           >
             <NavLink to={'/userProfile'}>
-              <p className='text-base text-textColor hover:font-semibold duration-150 transition ease-in-out'>
+              <p className='text-base text-black hover:font-semibold duration-150 transition ease-in-out'>
                 Profile
               </p>
             </NavLink>
 
             <hr />
-            <p className='text-base text-textColor hover:font-semibold duration-150 transition ease-in-out'>
+            <p className='text-base text-black hover:font-semibold duration-150 transition ease-in-out'>
               My Favorites
             </p>
+
             <hr />
-            <NavLink to={'/dashboard'}>
-              <p className='text-base text-textColor hover:font-semibold duration-150 transition ease-in-out'>
-                Dashboard
-              </p>
-            </NavLink>
+
             {user?.role === 'admin' && (
               <>
                 <NavLink to={'/dashboard'}>
-                  <p className='text-base text-textColor hover:font-semibold duration-150 transition ease-in-out'>
+                  <p className='text-base text-black hover:font-semibold duration-150 transition ease-in-out'>
                     Dashboard
                   </p>
                 </NavLink>
+                <hr />
               </>
+              
             )}
+           
             <p
-              className='text-base text-textColor hover:font-semibold duration-150 transition ease-in-out'
+              className='text-base text-black hover:font-semibold duration-150 transition ease-in-out'
               onClick={handleLogOut}
             >
               Sign Out

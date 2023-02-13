@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Route, Routes, useNavigate } from 'react-router-dom'
-import { Dashboard, Home, Login } from './components'
 import { app } from './config/firebase.config'
 import { getAuth } from 'firebase/auth'
 import { AnimatePresence } from 'framer-motion'
 import { validateUser } from './api'
 import { useStateValue } from './context/StateProvider'
 import { actionTypes } from './context/reducer'
+import { Dashboard, Home, Login } from './pages'
 
 function App () {
   const [auth, setAuth] = useState(
@@ -43,7 +43,7 @@ function App () {
 
   return (
     <AnimatePresence>
-      <div className='h-auto min-w-[680px] bg-black text-white flex justify-center items-center '>
+      <div className='h-auto min-w-[680px] text-white flex justify-center items-center '>
         <Routes>
           <Route path='/*' element={<Home />} />
           <Route path='/login' element={<Login setAuth={setAuth} />} />
