@@ -61,15 +61,6 @@ function Dashboard () {
         >
           Albums
         </NavLink>
-
-        <NavLink
-          to={'/dashboard/newSong'}
-          className={({ isActive }) =>
-            isActive ? isActiveStyle : isNotActiveStyle
-          }
-        >
-          NewSong
-        </NavLink>
       </div>
 
       <div className='my-4 w-full p-4 '>
