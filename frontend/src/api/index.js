@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 const baseUrl = 'http://localhost:4000/v1'
+// http://localhost:4000/v1/api/albums/save
 
 // Iniciar seccion
 export const validateUser = async token => {
@@ -115,6 +116,7 @@ export const saveNewAlbum = async data => {
     return (await res).data.savedAlbum
   } catch (error) {}
 }
+// http://localhost:4000/v1/api/albums/save
 
 // Eliminar Album
 export const deleteAlbum = async id => {

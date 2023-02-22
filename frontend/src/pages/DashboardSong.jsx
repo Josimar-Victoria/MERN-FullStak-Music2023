@@ -48,7 +48,7 @@ function DashboardSong () {
           <AiOutlineClear className='text-3xl  cursor-pointer hover:text-purple-700' />
         </i>
       </div>
-      <div className='relative w-full my-4 p-4 border border-purple-700 rounded-md'>
+      <div className='relative w-full my-4 p-4 py-16 border border-purple-700 rounded-md'>
         <div className='absolute top-4 left-4 '>
           <p className='text-xl font-bold'>
             <span className='text-sm font-semibold text-textColor'>

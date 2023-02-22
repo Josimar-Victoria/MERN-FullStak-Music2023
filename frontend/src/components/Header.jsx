@@ -120,7 +120,7 @@ function Header () {
 
             {user?.role === 'admin' && (
               <>
-                <NavLink to={'/dashboard'}>
+                <NavLink to={'/dashboard/home'}>
                   <p className='text-base text-black hover:font-semibold duration-150 transition ease-in-out'>
                     Dashboard
                   </p>
